@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+    direction: rtl;
+
+    background-color: #111; 
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #eae6da; 
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed rgba(255,255,255,0.2);
+    width: 65%;
+    margin: 1.5rem auto;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(6px);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 12px;
+    color: #eae6da;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+li:hover {
+    color: #d93c3c; 
+    transform: scale(1.05);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    letter-spacing: 3px;
+    color: #d93c3c;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+
+section {
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(255,255,255,0.03);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px rgba(255,255,255,0.07);
+}
+
+ul li {
+    margin: 6px 0;
+    font-size: 0.9rem;
+    color: #eae6da;
+}
+
+a {
+    color: #c0b283; 
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+a:hover {
+    color: #f7d794; 
+    text-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #ff0000;
+    padding: 1rem 0 2rem;
+    letter-spacing: 1px;
+    background-color: rgba(88, 87, 87, 0.4);
+}
+
+@keyframes softLight {
+    0% { background-color: rgba(88, 87, 87, 0.4); }
+    50% { background-color: rgba(88, 87, 87, 0.4); }
+    100% { background-color: rgba(88, 87, 87, 0.4); }
+}
+section {
+    animation: softLight 10s infinite ease-in-out;
+}
